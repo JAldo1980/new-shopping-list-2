@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>new-shopping-list-2</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header>
+          <h1>Shopping list</h1>
+        </header>
+        <section class="input-el">
+          <div class="input-box">
+            <div class="inner-box-one">
+              <label for="item-input">Item Input</label>
+              <input type="text" id="item-input" placeholder="Add items..." />
+
+              <label for="quant-input">Quantity</label>
+              <input
+                type="number"
+                id="quant-input"
+                placeholder="Add quantity e.g(2)."
+              />
+            </div>
+            <label for="select-category">Select Category</label>
+            <div class="inner-box-two">
+              <select
+                id="select-category"
+                name="categories"
+                class="select-dropdown"
+              >
+                <option value="fruit">Fruit</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="meat">Meat</option>
+                <option value="fish">Fish</option>
+                <option value="condiments">Condiments</option>
+                <option value="baking">Baking</option>
+                <option value="spices">Spices</option>
+                <option value="bread/grains">Bread/Grains</option>
+                <option value="tinned">Tinned</option>
+                <option value="beverages">Beverages</option>
+                <option value="dairy">Dairy</option>
+                <option value="frozen">Frozen</option>
+                <option value="snacks">Snacks</option>
+                <option value="pets">Pets</option>
+                <option value="toiletries">Toiletries</option>
+                <option value="home/kitchen">Home/Kitchen</option>
+                <option value="sweets/chocolate">Sweets/Chocolates</option>
+              </select>
+            </div>
+            <button id="update-btn">Add to list</button>
+          </div>
+        </section>
+        <section id="output-el">
+          <div class="shopping-list-el" id="shopping-list">
+            <!-- JS render -->
+          </div>
+          <!-- JS render -->
+        </section>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

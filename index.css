@@ -1,0 +1,138 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* end of css reset */
+
+.container {
+  padding: 1em;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-box-one,
+.inner-box-two {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 1em;
+}
+
+.shopping-list-el {
+  margin-top: 1.5em;
+}
+
+.item-container {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+
+  align-items: center;
+  gap: 1em;
+}
+.item-container p {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 0.2em 0.4em;
+}
+
+.remove-btn {
+  margin: 0;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 0.2em 0.4em;
+}
+
+.quant-span {
+  margin-left: 1em;
+  font-size: 0.8rem;
+  color: lightblue;
+}
+
+.cat-container {
+  margin-top: 2em;
+}
+
+.cat-header {
+  background-color: lightskyblue;
+  padding-left: 0.5em;
+  color: #fff;
+  text-transform: capitalize;
+}
